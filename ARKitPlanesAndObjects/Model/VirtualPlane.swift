@@ -44,7 +44,7 @@ class VirtualPlane: SCNNode {
      */
     func initializePlaneMaterial() -> SCNMaterial {
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.white.withAlphaComponent(0.50)
+        material.diffuse.contents = UIColor.white.withAlphaComponent(0.10)
         return material
     }
     

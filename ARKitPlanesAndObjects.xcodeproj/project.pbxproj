@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6650BE871FBC784700EA0CA2 /* mug.dae in Resources */ = {isa = PBXBuildFile; fileRef = 6650BE861FBC784700EA0CA2 /* mug.dae */; };
+		665FBB711FB9CC09005B05E3 /* DLARSessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FBB701FB9CC09005B05E3 /* DLARSessionState.swift */; };
 		6687D5C41F948CC80089F08D /* VirtualPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D5C31F948CC80089F08D /* VirtualPlane.swift */; };
 		66F9F3B31F5DAFEE00836E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9F3B21F5DAFEE00836E8E /* AppDelegate.swift */; };
 		66F9F3B71F5DAFEE00836E8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9F3B61F5DAFEE00836E8E /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6650BE861FBC784700EA0CA2 /* mug.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = mug.dae; sourceTree = "<group>"; };
+		665FBB701FB9CC09005B05E3 /* DLARSessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLARSessionState.swift; sourceTree = "<group>"; };
 		6687D5C31F948CC80089F08D /* VirtualPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPlane.swift; sourceTree = "<group>"; };
 		66F9F3AF1F5DAFEE00836E8E /* ARKitPlanesAndObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitPlanesAndObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F9F3B21F5DAFEE00836E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		665FBB761FB9D2D2005B05E3 /* coffeeCup */ = {
+			isa = PBXGroup;
+			children = (
+				6650BE861FBC784700EA0CA2 /* mug.dae */,
+			);
+			path = coffeeCup;
+			sourceTree = "<group>";
+		};
 		6687D5BF1F948C840089F08D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -49,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6687D5C31F948CC80089F08D /* VirtualPlane.swift */,
+				665FBB701FB9CC09005B05E3 /* DLARSessionState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -56,6 +69,7 @@
 		6687D5C11F948C940089F08D /* App And Resources */ = {
 			isa = PBXGroup;
 			children = (
+				665FBB761FB9D2D2005B05E3 /* coffeeCup */,
 				66F9F3B21F5DAFEE00836E8E /* AppDelegate.swift */,
 				66F9F3BB1F5DAFEE00836E8E /* Assets.xcassets */,
 			);
@@ -157,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6650BE871FBC784700EA0CA2 /* mug.dae in Resources */,
 				66F9F3BF1F5DAFEE00836E8E /* LaunchScreen.storyboard in Resources */,
 				66F9F3BC1F5DAFEE00836E8E /* Assets.xcassets in Resources */,
 				66F9F3BA1F5DAFEE00836E8E /* Main.storyboard in Resources */,
@@ -171,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F9F3B71F5DAFEE00836E8E /* ViewController.swift in Sources */,
+				665FBB711FB9CC09005B05E3 /* DLARSessionState.swift in Sources */,
 				66F9F3B31F5DAFEE00836E8E /* AppDelegate.swift in Sources */,
 				6687D5C41F948CC80089F08D /* VirtualPlane.swift in Sources */,
 			);

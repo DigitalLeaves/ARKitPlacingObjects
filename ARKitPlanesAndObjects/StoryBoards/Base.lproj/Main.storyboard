@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="20l-Vd-VXv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tXr-a1-R10">
+        <scene sceneID="nsj-Bz-yfu">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="20l-Vd-VXv" customClass="ViewController" customModule="ARKitPlanesAndObjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMS-aO-Hu6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSX-ev-2yL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="20l-Vd-VXv" id="S3F-Ij-iX4"/>
+                                </connections>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👀 Look for a plane to place your coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j94-VC-oTv">
+                                <rect key="frame" x="16" y="40" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.79724957191780821" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oMu-pI-xLW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JSX-ev-2yL" firstAttribute="trailing" secondItem="hJL-2G-fdh" secondAttribute="trailing" id="60I-lZ-BjX"/>
+                            <constraint firstItem="j94-VC-oTv" firstAttribute="centerX" secondItem="sMS-aO-Hu6" secondAttribute="centerX" id="AIJ-yA-vKv"/>
+                            <constraint firstItem="j94-VC-oTv" firstAttribute="top" secondItem="hJL-2G-fdh" secondAttribute="top" constant="20" id="B8g-kX-pom"/>
+                            <constraint firstItem="j94-VC-oTv" firstAttribute="leading" secondItem="hJL-2G-fdh" secondAttribute="leading" constant="16" id="Qfo-fB-kZj"/>
+                            <constraint firstItem="JSX-ev-2yL" firstAttribute="top" secondItem="sMS-aO-Hu6" secondAttribute="top" id="XRE-pQ-TTk"/>
+                            <constraint firstItem="hJL-2G-fdh" firstAttribute="trailing" secondItem="j94-VC-oTv" secondAttribute="trailing" constant="16" id="gEF-zS-mDi"/>
+                            <constraint firstItem="JSX-ev-2yL" firstAttribute="bottom" secondItem="hJL-2G-fdh" secondAttribute="bottom" id="p80-TA-3xF"/>
+                            <constraint firstItem="JSX-ev-2yL" firstAttribute="leading" secondItem="hJL-2G-fdh" secondAttribute="leading" id="pu1-gk-U4k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hJL-2G-fdh"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="JSX-ev-2yL" id="GSD-Nw-tIS"/>
+                        <outlet property="statusLabel" destination="j94-VC-oTv" id="utU-H1-b1h"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YhN-NI-yt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-218.40000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>
