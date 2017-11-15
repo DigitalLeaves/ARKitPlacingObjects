@@ -147,6 +147,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             print("Unable to identify touches on any plane. Ignoring interaction...")
             return
         }
+        if currentCaffeineStatus != .ready {
+            print("Unable to place objects when the planes are not ready...")
+            return
+        }
+        
         let touchPoint = touch.location(in: sceneView)
         print("Touch happened at point: \(touchPoint)")
         if let plane = virtualPlaneProperlySet(touchPoint: touchPoint) {
